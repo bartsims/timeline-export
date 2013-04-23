@@ -10,6 +10,12 @@ from lxml.builder import E
 import csv
 import socket
 import codecs
+from openpyxl.workbook import Workbook
+from openpyxl.writer.excel import ExcelWriter
+from openpyxl.style import Color, Fill
+from openpyxl.cell import Cell
+from openpyxl.cell import get_column_letter
+
 
 # reads te timeline from a CSV file. Temporary method until we can merge it with plaso and output the xls from the object in memory.
 def read_from_csv(filename):
@@ -137,9 +143,12 @@ def export_html(timeline,file,columns):
         frm=check_colors(row,c)
         for col in columns:
             tbl_td=etree.SubElement(tbl_tr,"td")
-            tbl_td.text=row[col]
-            if col in frm.keys():
-                tbl_td.set("style","color: "+frm[col]["color"]+"; background-color: "+frm[col]["background"])            
+            try:
+                tbl_td.text=row[col]
+                if col in frm.keys():
+                    tbl_td.set("style","color: "+frm[col]["color"]+"; background-color: "+frm[col]["background"])
+            except:
+                print("encountered errors when processing: "+row[col])            
     f=open(file,'w')
     f.write(etree.tostring(page, pretty_print=True))
     f.close()
@@ -152,6 +161,48 @@ def send_to_splunk(timeline,ip,portnum):
         line=row["date"]+" "+row["time"] + " "+row["source"]+": "+row["short"]+" -- "+row["desc"]
         s.send(line)
     s.close()
+
+# exports into an excel file
+def export_excel(timeline,filename,columns):
+    wb = Workbook()
+    dest_filename = r'Timeline.xlsx'
+
+    ws = wb.worksheets[0]
+
+    ws.title = "Timeline"
+
+    for col_idx in xrange(1, 5):
+        col = get_column_letter(col_idx)
+    for row in xrange(1, 5):
+        _cell = ws.cell('%s%s'%(col, row))
+        _cell.value = '%s%s' % (col, row)
+  
+    # Cell font style
+      # Style information can be found in openpyxl/style.py
+        _cell.style.font.color.index = Color.GREEN
+        _cell.style.font.name = 'Arial'
+        _cell.style.font.size = 8
+        _cell.style.font.bold = True
+        _cell.style.alignment.wrap_text = True
+      
+      # Cell background color
+        _cell.style.fill.fill_type = Fill.FILL_SOLID
+        _cell.style.fill.start_color.index = Color.DARKRED
+  
+      # You should only modify column dimensions after you have written a cell in 
+      #     the column. Perfect world: write column dimensions once per column
+      # 
+      #ws.column_dimensions["F"].width = 60.0
+
+
+    #ws = wb.create_sheet()
+
+    #ws.title = 'Pi'
+
+    #ws.cell('F5').value = 3.14
+
+    wb.save(filename = dest_filename)
+
 
 timeline=read_from_csv('timeline_march_3h_135.csv')
 #print timeline
