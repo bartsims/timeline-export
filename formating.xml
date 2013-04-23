@@ -1,77 +1,76 @@
 <xml>
 	<formating>
-		<formula operator="equal" field="[ALL]" color="white" background="blue">"LNK"</formula>
-		<formula operator="equal" field="source" color="" background="">"PRE"</formula>
-		<formula operator="equal" field="source" color="" background="">"WEBHIST"</formula>
-		<formula operator="contain" field="source" color="" background="">"LOG"</formula>
-		<formula operator="contain" field="source" color="" background="">LSO</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">Firefox 3 history"</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">SetupAPI Log</formula>
-		<formula operator="equal" field="sourcetype" color="" background="">XP Prefetch</formula>
-		<formula operator="equal" field="sourcetype" color="" background="">UserAssist key</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">Shortcut LNK</formula>
-		<formula operator="equal" field="sourcetype" color="" background="">RecentDocs key</formula>
-		<formula operator="equal" field="sourcetype" color="" background="">MountPoints2 key</formula>
-		<formula operator="equal" field="sourcetype" color="" background="">Deleted Registry</formula>
-		<formula operator="equal" field="sourcetype" color="" background="">$Recycle.bin</formula>
-		<formula operator="equal" field="sourcetype" color="" background="">Internet Explorer</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">XP Firewall Log</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">Flash Cookie</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">LSO</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">Prefetch</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">Log</formula>
-		<formula operator="contain" field="sourcetype" color="" background="">RunMRU key</formula>
-		<formula operator="contain" field="short" color="" background="">UEME_RUNPIDL</formula>
-		<formula operator="contain" field="short" color="" background="">UEME_RUNPATH"</formula>
-		<formula operator="contain" field="short" color="" background="">visited file://</formula>
-		<formula operator="contain" field="short" color="" background="">MUICache</formula>
-		<formula operator="contain" field="short" color="" background="">opened by</formula>
-		<formula operator="contain" field="short" color="" background="">CreateDate</formula>
-		<formula operator="contain" field="short" color="" background="">.pf</formula>
-		<formula operator="contain" field="short" color="" background="">ShellNoRoam/Bags</formula>
-		<formula operator="contain" field="short" color="" background="">BagMRU</formula>
-		<formula operator="contain" field="short" color="" background="">RemovableMedia</formula>
-		<formula operator="contain" field="short" color="" background="">STORAGE/RemovableMedia</formula>
-		<formula operator="contain" field="short" color="" background="">USB</formula>
-		<formula operator="contain" field="short" color="" background="">/USB/Vid_</formula>
-		<formula operator="contain" field="short" color="" background="">Enum/USBSTOR/Disk&amp;Ven_</formula>
-		<formula operator="contain" field="short" color="" background="">was executed</formula>
-		<formula operator="contain" field="short" color="" background="">UEME_</formula>
-		<formula operator="contain" field="short" color="" background="">Recently opened file</formula>
-		<formula operator="contain" field="short" color="" background="">visited</formula>
-		<formula operator="contain" field="short" color="" background="">volume mounted</formula>
-		<formula operator="contain" field="short" color="" background="">DELETED</formula>
-		<formula operator="endwith" field="short" color="" background="">drive mounted</formula>
-		<formula operator="beginwith" field="short" color="" background="">Flash Cookie</formula>
-		<formula operator="contain" field="short" color="" background="">URL</formula>
-		<formula operator="beginwith" field="short" color="" background="">URL:file:///</formula>
-		<formula operator="contain" field="short" color="" background="">RunMRU</formula>
-		<formula operator="contain" field="filename" color="" background="">.pf</formula>
-		<formula operator="contain" field="short" color="" background="">RECYCLE</formula>
-		<formula operator="contain" field="desc" color="" background="">RECYCLE</formula>
-		<formula operator="contain" field="filename" color="" background="">RECYCLE</formula>
-		<formula operator="contain" field="short" color="" background="">.lnk</formula>
-		<formula operator="contain" field="desc" color="" background="">.lnk</formula>
-		<formula operator="contain" field="filename" color="" background="">.lnk</formula>
-		<formula operator="equal" field="type" color="" background="">Time of Launch</formula>
-		<formula operator="contain" field="type" color="" background="">Drive last mounted</formula>
-		<formula operator="contain" field="type" color="" background="">LSO</formula>
-		<formula operator="contain" field="type" color="" background="">Last run</formula>
-		<formula operator="contain" field="type" color="" background="">File Opened</formula>
-		<formula operator="contain" field="type" color="" background="">Folder Opened</formula>
-		<formula operator="contain" field="type" color="" background="">URL</formula>
-		<formula operator="contain" field="type" color="" background="">CMD typed</formula>
-		<formula operator="endwith" field="desc" color="" background="">drive mounted</formula>
-		<formula operator="beginwith" field="desc" color="" background="">URL</formula>
-		<formula operator="beginwith" field="desc" color="" background="">[DELETED]</formula>
-		<formula operator="contain" field="desc" color="" background="">LSO</formula>
-		<formula operator="contain" field="desc" color="" background="">.pf</formula>
-		<formula operator="beginwith" field="desc" color="" background="">Recently opened file of extension</formula>
-		<formula operator="beginwith" field="desc" color="" background="">file:///</</formula>
-		<formula operator="contain" field="desc" color="" background="">http://</formula>
-		<formula operator="beginwith" field="desc" color="" background="">typed the following cmd</formula>
-		<formula operator="contain" field="desc" color="" background="">URL:file:///</formula>
-
-	<!--	<formula operator="" field="" color="" background=""></formula>		-->
-	</ formating>
+		<formula id="1" operator="equal" field="[ALL]" color="00008b" background="FFFFFF">"LNK"</formula>
+		<formula id="2" operator="equal" field="source" color="FFFFFF" background="FF0000">"PRE"</formula>
+		<formula id="3" operator="equal" field="source" color="000000" background="FFFFFF">"WEBHIST"</formula>
+		<formula id="4" operator="contain" field="source" color="000000" background="FFFFFF">"LOG"</formula>
+		<formula id="5" operator="contain" field="source" color="000000" background="FFFFFF">LSO</formula>
+		<formula id="6" operator="contain" field="sourcetype" color="000000" background="FFFFFF">Firefox 3 history"</formula>
+		<formula id="7" operator="contain" field="sourcetype" color="000000" background="FFFFFF">SetupAPI Log</formula>
+		<formula id="8" operator="equal" field="sourcetype" color="FFFFFF" background="FF0000">XP Prefetch</formula>
+		<formula id="9" operator="equal" field="sourcetype" color="000000" background="FFFFFF">UserAssist key</formula>
+		<formula id="10" operator="contain" field="sourcetype" color="00008b" background="FFFFFF">Shortcut LNK</formula>
+		<formula id="11" operator="equal" field="sourcetype" color="000000" background="FFFFFF">RecentDocs key</formula>
+		<formula id="12" operator="equal" field="sourcetype" color="000000" background="FFFFFF">MountPoints2 key</formula>
+		<formula id="13" operator="equal" field="sourcetype" color="000000" background="FFFFFF">Deleted Registry</formula>
+		<formula id="14" operator="equal" field="sourcetype" color="000000" background="FFFFFF">$Recycle.bin</formula>
+		<formula id="15" operator="equal" field="sourcetype" color="000000" background="FFFFFF">Internet Explorer</formula>
+		<formula id="16" operator="contain" field="sourcetype" color="000000" background="FFFFFF">XP Firewall Log</formula>
+		<formula id="17" operator="contain" field="sourcetype" color="000000" background="FFFFFF">Flash Cookie</formula>
+		<formula id="18" operator="contain" field="sourcetype" color="000000" background="FFFFFF">LSO</formula>
+		<formula id="19" operator="contain" field="sourcetype" color="FFFFFF" background="FF0000">Prefetch</formula>
+		<formula id="20" operator="contain" field="sourcetype" color="000000" background="FFFFFF">Log</formula>
+		<formula id="21" operator="contain" field="sourcetype" color="000000" background="FFFFFF">RunMRU key</formula>
+		<formula id="22" operator="contain" field="short" color="000000" background="FFFFFF">UEME_RUNPIDL</formula>
+		<formula id="23" operator="contain" field="short" color="000000" background="FFFFFF">UEME_RUNPATH"</formula>
+		<formula id="24" operator="contain" field="short" color="000000" background="FFFFFF">visited file://</formula>
+		<formula id="25" operator="contain" field="short" color="000000" background="FFFFFF">MUICache</formula>
+		<formula id="26" operator="contain" field="short" color="000000" background="FFFFFF">opened by</formula>
+		<formula id="27" operator="contain" field="short" color="000000" background="FFFFFF">CreateDate</formula>
+		<formula id="28" operator="contain" field="short" color="FFFFFF" background="FF0000">.pf</formula>
+		<formula id="29" operator="contain" field="short" color="000000" background="FFFFFF">ShellNoRoam/Bags</formula>
+		<formula id="30" operator="contain" field="short" color="000000" background="FFFFFF">BagMRU</formula>
+		<formula id="31" operator="contain" field="short" color="000000" background="FFFFFF">RemovableMedia</formula>
+		<formula id="32" operator="contain" field="short" color="000000" background="FFFFFF">STORAGE/RemovableMedia</formula>
+		<formula id="33" operator="contain" field="short" color="000000" background="FFFFFF">USB</formula>
+		<formula id="34" operator="contain" field="short" color="000000" background="FFFFFF">/USB/Vid_</formula>
+		<formula id="35" operator="contain" field="short" color="000000" background="FFFFFF">Enum/USBSTOR/Disk&amp;Ven_</formula>
+		<formula id="36" operator="contain" field="short" color="FFFFFF" background="FF0000">was executed</formula>
+		<formula id="37" operator="contain" field="short" color="000000" background="FFFFFF">UEME_</formula>
+		<formula id="38" operator="contain" field="short" color="000000" background="FFFFFF">Recently opened file</formula>
+		<formula id="39" operator="contain" field="short" color="000000" background="FFFFFF">visited</formula>
+		<formula id="40" operator="contain" field="short" color="000000" background="FFFFFF">volume mounted</formula>
+		<formula id="41" operator="contain" field="short" color="000000" background="FFFFFF">DELETED</formula>
+		<formula id="42" operator="endwith" field="short" color="000000" background="FFFFFF">drive mounted</formula>
+		<formula id="43" operator="beginwith" field="short" color="000000" background="FFFFFF">Flash Cookie</formula>
+		<formula id="44" operator="contain" field="short" color="000000" background="FFFFFF">URL</formula>
+		<formula id="45" operator="beginwith" field="short" color="000000" background="FFFFFF">URL:file:///</formula>
+		<formula id="46" operator="contain" field="short" color="000000" background="FFFFFF">RunMRU</formula>
+		<formula id="47" operator="contain" field="filename" color="FFFFFF" background="FF0000">.pf</formula>
+		<formula id="48" operator="contain" field="short" color="000000" background="FFFFFF">RECYCLE</formula>
+		<formula id="49" operator="contain" field="desc" color="000000" background="FFFFFF">RECYCLE</formula>
+		<formula id="50" operator="contain" field="filename" color="000000" background="FFFFFF">RECYCLE</formula>
+		<formula id="51" operator="contain" field="short" color="00008b" background="FFFFFF">.lnk</formula>
+		<formula id="52" operator="contain" field="desc" color="00008b" background="FFFFFF">.lnk</formula>
+		<formula id="53" operator="contain" field="filename" color="00008b" background="FFFFFF">.lnk</formula>
+		<formula id="54" operator="equal" field="type" color="000000" background="FFFFFF">Time of Launch</formula>
+		<formula id="55" operator="contain" field="type" color="000000" background="FFFFFF">Drive last mounted</formula>
+		<formula id="56" operator="contain" field="type" color="000000" background="FFFFFF">LSO</formula>
+		<formula id="57" operator="contain" field="type" color="000000" background="FFFFFF">Last run</formula>
+		<formula id="58" operator="contain" field="type" color="000000" background="FFFFFF">File Opened</formula>
+		<formula id="59" operator="contain" field="type" color="000000" background="FFFFFF">Folder Opened</formula>
+		<formula id="60" operator="contain" field="type" color="000000" background="FFFFFF">URL</formula>
+		<formula id="61" operator="contain" field="type" color="000000" background="FFFFFF">CMD typed</formula>
+		<formula id="62" operator="endwith" field="desc" color="000000" background="FFFFFF">drive mounted</formula>
+		<formula id="63" operator="beginwith" field="desc" color="000000" background="FFFFFF">URL</formula>
+		<formula id="64" operator="beginwith" field="desc" color="000000" background="FFFFFF">[DELETED]</formula>
+		<formula id="65" operator="contain" field="desc" color="000000" background="FFFFFF">LSO</formula>
+		<formula id="66" operator="contain" field="desc" color="FFFFFF" background="FF0000">.pf</formula>
+		<formula id="67" operator="beginwith" field="desc" color="000000" background="FFFFFF">Recently opened file of extension</formula>
+		<formula id="68" operator="beginwith" field="desc" color="000000" background="FFFFFF">file:///</formula>
+		<formula id="69" operator="contain" field="desc" color="000000" background="FFFFFF">http://</formula>
+		<formula id="70" operator="beginwith" field="desc" color="000000" background="FFFFFF">typed the following cmd</formula>
+		<formula id="71" operator="contain" field="desc" color="000000" background="FFFFFF">URL:file:///</formula>
+	    <formula id="72" operator="contain" field="short" color="FFFFFF" background="FF6666">java</formula>
+	</formating>
 </xml>
